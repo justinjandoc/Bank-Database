@@ -1,0 +1,357 @@
+Script started on Sun 28 Nov 2021 09:20:07 PM HST
+]0;jjandoc@uhx02:~/project2[?1034huhx02:/home/j/jjandoc/project2% ./project
+Hello, welcome to the bank.
+
+Please choose from the list of options shown below.
+add:      Creates a new record for the database.
+printall: Displays all of the records within the database.
+find:     Displays records with certain account numbers.
+delete:   Deletes a record based on account number.
+quit:     Exits the program.
+
+Please type in your selected option: p
+
+
+---There are no records---
+
+
+You will now be redirected back to the menu.
+
+Please choose from the list of options shown below.
+add:      Creates a new record for the database.
+printall: Displays all of the records within the database.
+find:     Displays records with certain account numbers.
+delete:   Deletes a record based on account number.
+quit:     Exits the program.
+
+Please type in your selected option: add  da
+
+I'm sorry, your input is invalid. Please try again.
+
+Please choose from the list of options shown below.
+add:      Creates a new record for the database.
+printall: Displays all of the records within the database.
+find:     Displays records with certain account numbers.
+delete:   Deletes a record based on account number.
+quit:     Exits the program.
+
+Please type in your selected option: add
+
+Please enter your name: Justin Jandoc
+Please enter an account number: 102
+Please enter your address (enter '!!!' when you are finished):
+My Address
+L :D
+!!!
+
+---The record was added---
+
+You will now be redirected back to the menu.
+
+Please choose from the list of options shown below.
+add:      Creates a new record for the database.
+printall: Displays all of the records within the database.
+find:     Displays records with certain account numbers.
+delete:   Deletes a record based on account number.
+quit:     Exits the program.
+
+Please type in your selected option: fo ind
+
+Please enter an account number: 200
+
+---No records were found---
+
+You will now be redirected back to the menu.
+
+Please choose from the list of options shown below.
+add:      Creates a new record for the database.
+printall: Displays all of the records within the database.
+find:     Displays records with certain account numbers.
+delete:   Deletes a record based on account number.
+quit:     Exits the program.
+
+Please type in your selected option: del
+
+Please enter an account number: 200
+
+---No records were deleted---
+
+You will now be redirected back to the menu.
+
+Please choose from the list of options shown below.
+add:      Creates a new record for the database.
+printall: Displays all of the records within the database.
+find:     Displays records with certain account numbers.
+delete:   Deletes a record based on account number.
+quit:     Exits the program.
+
+Please type in your selected option: find
+
+Please enter an account number: 100
+
+---No records were found---
+
+You will now be redirected back to the menu.
+
+Please choose from the list of options shown below.
+add:      Creates a new record for the database.
+printall: Displays all of the records within the database.
+find:     Displays records with certain account numbers.
+delete:   Deletes a record based on account number.
+quit:     Exits the program.
+
+Please type in your selected option: print
+
+-----Record-----
+102
+Justin Jandoc
+My Address
+:D
+----------------
+
+
+You will now be redirected back to the menu.
+
+Please choose from the list of options shown below.
+add:      Creates a new record for the database.
+printall: Displays all of the records within the database.
+find:     Displays records with certain account numbers.
+delete:   Deletes a record based on account number.
+quit:     Exits the program.
+
+Please type in your selected option: q
+
+The program will now close, thank you for your time.
+
+]0;jjandoc@uhx02:~/project2uhx02:/home/j/jjandoc/project2% ./project_debug 
+
+----------DEBUG MODE ENABLED----------
+
+
+----------DEBUG----------
+Constructor called: llist
+-------------------------
+
+
+----------DEBUG----------
+Function called: readfile
+-------------------------
+
+
+----------DEBUG----------
+Function called: addRecord
+
+Parameters:
+int uaccountno
+char uname[]
+char uaddress[]
+
+Values:
+uaccountno: 102
+uname[]: Justin Jandoc
+uaddress: 
+My Address
+:D
+-------------------------
+
+Hello, welcome to the bank.
+
+Please choose from the list of options shown below.
+add:      Creates a new record for the database.
+printall: Displays all of the records within the database.
+find:     Displays records with certain account numbers.
+delete:   Deletes a record based on account number.
+quit:     Exits the program.
+
+Please type in your selected option: add
+
+Please enter your name: John Doe
+Please enter an account number: 102
+
+----------DEBUG----------
+Function called: getaddress
+
+Parameters:
+char address[]
+int space
+
+Values:
+address[]: ˆ²?³
+space: 102
+
+-------------------------
+
+Please enter your address (enter '!!!' when you are finished):
+Address!!!
+!!!
+
+----------DEBUG----------
+Function called: addRecord
+
+Parameters:
+int uaccountno
+char uname[]
+char uaddress[]
+
+Values:
+uaccountno: 102
+uname[]: John Doe
+uaddress: 
+Address!!!
+-------------------------
+
+
+---The record was not added---
+
+You will now be redirected back to the menu.
+
+Please choose from the list of options shown below.
+add:      Creates a new record for the database.
+printall: Displays all of the records within the database.
+find:     Displays records with certain account numbers.
+delete:   Deletes a record based on account number.
+quit:     Exits the program.
+
+Please type in your selected option: ^[[A^[[B        add
+
+Please enter your name: Mary Sue
+Please enter an account number: 202
+
+----------DEBUG----------
+Function called: getaddress
+
+Parameters:
+char address[]
+int space
+
+Values:
+address[]: Address!!!
+space: 202
+
+-------------------------
+
+Please enter your address (enter '!!!' when you are finished):
+My    Her House
+12th Street
+!!!
+
+----------DEBUG----------
+Function called: addRecord
+
+Parameters:
+int uaccountno
+char uname[]
+char uaddress[]
+
+Values:
+uaccountno: 202
+uname[]: Mary Sue
+uaddress: 
+Her House
+12th Street
+-------------------------
+
+
+---The record was added---
+
+You will now be redirected back to the menu.
+
+Please choose from the list of options shown below.
+add:      Creates a new record for the database.
+printall: Displays all of the records within the database.
+find:     Displays records with certain account numbers.
+delete:   Deletes a record based on account number.
+quit:     Exits the program.
+
+Please type in your selected option: print
+
+
+----------DEBUG----------
+Function called: ostream& operator<<
+
+Parameters:
+ostream& ecPrint
+const llist& ecList
+
+-------------------------
+
+-----Record-----
+202
+Mary Sue
+Her House
+12th Street
+----------------
+
+-----Record-----
+102
+Justin Jandoc
+My Address
+:D
+----------------
+
+
+You will now be redirected back to the menu.
+
+Please choose from the list of options shown below.
+add:      Creates a new record for the database.
+printall: Displays all of the records within the database.
+find:     Displays records with certain account numbers.
+delete:   Deletes a record based on account number.
+quit:     Exits the program.
+
+Please type in your selected option: de
+
+Please enter an account number: 102
+
+----------DEBUG----------
+Function called: deleteRecord
+
+Parameters:
+int uaccountno
+
+Values:
+uaccountno: 102
+-------------------------
+
+
+---The record was deleted---
+
+You will now be redirected back to the menu.
+
+Please choose from the list of options shown below.
+add:      Creates a new record for the database.
+printall: Displays all of the records within the database.
+find:     Displays records with certain account numbers.
+delete:   Deletes a record based on account number.
+quit:     Exits the program.
+
+Please type in your selected option: q
+
+The program will now close, thank you for your time.
+
+
+----------DEBUG----------
+Destructor called: ~llist
+-------------------------
+
+
+----------DEBUG----------
+Function called: writefile
+-------------------------
+
+
+----------DEBUG----------
+Function called: cleanup
+-------------------------
+
+]0;jjandoc@uhx02:~/project2uhx02:/home/j/jjandoc/project2% cat data.txt 
+-----Record-----
+202
+Mary Sue
+Her House
+12th Street
+----------------
+]0;jjandoc@uhx02:~/project2uhx02:/home/j/jjandoc/project2% exit
+exit
+
+Script done on Sun 28 Nov 2021 09:22:07 PM HST

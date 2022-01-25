@@ -1,0 +1,21 @@
+Script started on Sun 28 Nov 2021 09:16:19 PM HST
+]0;jjandoc@uhx02:~/project2[?1034huhx02:/home/j/jjandoc/project2% make -f debug.mak
+g++ -DDEBUGMODE  -ansi -pedantic-errors -Wall -c user_interface.cpp
+g++ -DDEBUGMODE -ansi -pedantic-errors -Wall -c llist.cpp
+g++ -o project_debug user_interface.o llist.o
+]0;jjandoc@uhx02:~/project2uhx02:/home/j/jjandoc/project2% touch user_interface.cpp
+]0;jjandoc@uhx02:~/project2uhx02:/home/j/jjandoc/project2% touch llist.cpp
+]0;jjandoc@uhx02:~/project2uhx02:/home/j/jjandoc/project2% touch llist.cpp[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmake 0f [K[K[K-f rell[Kease.mak [K
+g++ -ansi -pedantic-errors -Wall -c user_interface.cpp
+g++ -ansi -pedantic-errors -Wall -c llist.cpp
+g++ -o project user_interface.o llist.o
+]0;jjandoc@uhx02:~/project2uhx02:/home/j/jjandoc/project2% make -f release.mak
+make: `project' is up to date.
+]0;jjandoc@uhx02:~/project2uhx02:/home/j/jjandoc/project2% make -f release.mak[K[K[K[K[K[K[K[K[K[K[Kdebug.mak 
+g++ -o project_debug user_interface.o llist.o
+]0;jjandoc@uhx02:~/project2uhx02:/home/j/jjandoc/project2% make -f debug.mak 
+make: `project_debug' is up to date.
+]0;jjandoc@uhx02:~/project2uhx02:/home/j/jjandoc/project2% exit
+exit
+
+Script done on Sun 28 Nov 2021 09:17:27 PM HST
